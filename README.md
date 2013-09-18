@@ -5,7 +5,7 @@
 
 ## Install
 
-    brew tap billzajac/hla
+    brew tap billzajac/tap
     brew install hla
 
 ## Test
