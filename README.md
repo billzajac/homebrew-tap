@@ -6,3 +6,4 @@
 ## Installation
 
     brew tap billzajac/hla
+    brew install hla
