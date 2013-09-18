@@ -5,6 +5,7 @@ class Hla < Formula
   url 'http://www.plantation-productions.com/Webster/HighLevelAsm/HLAv2.16/mac.hla.tar.gz'
   sha1 'e914f4617e66973a2399b663a4f26a304fcd8650'
   version '2.16'
+  tmp = '/tmp'
 
   def install
     ohai "Installing into: #{prefix}"
@@ -27,7 +28,7 @@ class Hla < Formula
 # Added for HLA (via brew)
 export hlalib=#{lib}
 export hlainc=#{include}
-export hlatemp=/tmp
+export hlatemp=#{tmp}
 END_OF_STRING
         bashrc.puts bashrc_additions
         ohai "Note: before you can use this, update your current environment with:\n  source .bashrc"
